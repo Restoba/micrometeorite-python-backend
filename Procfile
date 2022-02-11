@@ -1,1 +1,1 @@
-web: gunicorn micrometeorite-model-rest-api-service:app --log-file -
+web: gunicorn micrometeorite-model-rest-api-service:app --preload -b 0.0.0.0:5000
