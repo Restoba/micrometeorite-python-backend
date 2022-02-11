@@ -5,6 +5,7 @@ import pandas as pd
 from keras.models import model_from_json
 from tensorflow import keras
 
+
 def prediction(base64Picture):
     images = []
     shape = (128, 128)
