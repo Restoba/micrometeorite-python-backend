@@ -1,1 +1,1 @@
-web: gunicorn micrometeorite-model-rest-api-service:app --preload -b 0.0.0.0:5000
+web: gunicorn micrometeorite-model-rest-api-service:app --preload -b 0.0.0.0:5000  -p $PORT
