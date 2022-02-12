@@ -16,9 +16,7 @@ def prediction(base64Picture):
     best_model = model_from_json(loaded_model_json)
     # load weights into new model
     best_model.load_weights("model5.h5")
-
     opt = keras.optimizers.Adam(learning_rate=1e-05)
-
     best_model.compile(loss="categorical_crossentropy", optimizer=opt, metrics=['acc'])
     # Prepare Image
     source = base64.b64decode(base64Picture[0])
